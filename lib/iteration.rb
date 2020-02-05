@@ -19,6 +19,7 @@ while row_index < src.count do
   end
   row_index += 1
 end 
+return 
 end
 
 def find_greater_pair(src)
