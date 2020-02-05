@@ -27,6 +27,7 @@ def find_greater_pair(src)
   # Produce a new Array that contains the larger number of each of the pairs
   # that are in the inner Arrays
   numbers = []
+  row_index = 0
   while row_index < src.count do
   
   element_index = 0
