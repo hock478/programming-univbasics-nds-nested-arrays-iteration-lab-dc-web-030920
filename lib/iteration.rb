@@ -11,7 +11,7 @@ row_index = 0
 while row_index < src.count do
   
   element_index = 0
-  strings = []
+  
   while element_index < src[row_index].count do
    
     strings += "I love #{src[row_index][element_index]} and #{src[row_index][element_index + 1]} on my pizza" 
