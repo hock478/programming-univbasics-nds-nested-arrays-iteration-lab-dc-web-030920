@@ -55,15 +55,23 @@ def total_even_pairs(src)
   # the number was even. Review the operator documentation if you've forgotten
   # this!
   
+  total = []
+  row_index = 0
   while row_index < src.count do
   
   element_index = 0
   
   while element_index < src[row_index].count do
    
-    strings << "I love " + src[row_index][0] + " and " +  src[row_index][1] + " on my pizza" 
+    if (src[row_index][0] % 2 == 0) && (src[row_index][1] % 2 == 0)
+      total << src[row_index][0]
+    else
+      total << src[row_index][1]
+    end
     element_index += 1
   end
   row_index += 1
 end 
+  return total.uniq
 end
+
