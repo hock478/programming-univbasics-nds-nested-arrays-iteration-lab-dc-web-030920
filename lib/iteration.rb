@@ -70,6 +70,6 @@ def total_even_pairs(src)
   end
   row_index += 1
 end 
-  return total * 2
+  return total / 2
 end
 
