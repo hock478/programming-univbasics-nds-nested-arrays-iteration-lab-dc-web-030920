@@ -35,9 +35,9 @@ def find_greater_pair(src)
   while element_index < src[row_index].count do
    
     if src[row_index][0] > src[row_index][1]
-      numbers >> src[row_index][0]
+      numbers << src[row_index][0]
     else
-      numbers >> src[row_index][1]
+      numbers << src[row_index][1]
     end
     element_index += 1
   end
